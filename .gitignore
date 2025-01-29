@@ -1,0 +1,8 @@
+# Ignore everything.
+**
+
+# But include these...
+!.gitignore
+!.meta
+!LICENSE
+!README.md
