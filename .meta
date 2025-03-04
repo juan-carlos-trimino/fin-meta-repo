@@ -1,7 +1,6 @@
 {
   "projects": {
     "fin-finance": "git@github.com:juan-carlos-trimino/fin-finance.git",
-    "fin-finance-admin": "git@github.com:juan-carlos-trimino/fin-finance-admin.git",
-    "vs-code-settings": "git@github.com:juan-carlos-trimino/vs-code-settings.git"
+    "fin-finance-admin": "git@github.com:juan-carlos-trimino/fin-finance-admin.git"
   }
 }
