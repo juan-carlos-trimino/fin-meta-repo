@@ -1,8 +1,24 @@
+# If you want to see the complete list of every file Git is currently tracking, run:
+# git ls-files
+#
+# And if you ever want to double-check whether a specific file inside <filepath> would be ignored if you created a new file there, run:
+# git check-ignore -v <filepath>
+# It is a test command that asks Git what it would do with a file path, even if that file does not exist yet on your computer. Git checks
+# <filepath> against your .gitignore file from top to bottom and gives you one of two results:
+# * Result 1: Blank output (No text returned)
+#   * What it means: The file is NOT ignored. Your ! rules worked, and Git will track this file when you create it.
+# * Result 2: Prints a file and line number (for example: .gitignore:2:*    <filepath>)
+#   * What it means: The file IS ignored. It tells you the exact file (.gitignore), line number (2), and rule (*) that is blocking it.
+#
+# You can test which files Git will track before committing by running:
+# git status --ignored -uall
+#
 # Ignore everything.
-**
+*
 
 # But include these...
 !.vscode
+!.vscode/**
 !.gitignore
 !.meta
 !LICENSE
